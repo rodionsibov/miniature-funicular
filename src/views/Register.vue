@@ -27,7 +27,7 @@ export default {
         .auth()
         .createUserWithEmailAndPassword(email.value, password.value)
         .then((user) => {
-          alert(user);
+          alert(`Account created for ${user.email}`);
         })
         .catch((err) => alert(err.message));
     };
